@@ -143,7 +143,6 @@ select {
   padding: 110px 18px;
 }
 .provide-block__wrapper {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,4 +211,96 @@ select {
       -ms-hyphens: auto;
           hyphens: auto;
   padding: 0 0 50px;
+}
+
+.feature-block {
+  padding: 110px 18px 30px;
+}
+.feature-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+.feature-block__top {
+  max-width: 42%;
+  margin: 0 auto;
+}
+.feature-block__top h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0 0 35px 0;
+}
+.feature-block__top p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+.feature-block__top p:after {
+  content: "";
+  display: block;
+  width: 135px;
+  padding-top: 30px;
+  border-bottom: 3px solid #ff3b3b;
+  margin: 0 auto;
+}
+.feature-block__bottom ul {
+  margin: 80px 0 60px 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.feature-block__bottom ul li {
+  padding: 0 35px;
+}
+.feature-block__bottom ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.feature-block__bottom ul li a:hover {
+  color: #ff3b3b;
+}
+.feature-block__pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.feature-block__pics div {
+  width: calc(25% - 10px);
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(pink));
+  background: linear-gradient(blue, pink);
+}
+.feature-block__pics div:nth-child(n+5) {
+  background: -webkit-gradient(linear, left top, left bottom, from(green), to(red));
+  background: linear-gradient(green, red);
+  margin-top: 15px;
 }
