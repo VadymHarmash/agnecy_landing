@@ -1,0 +1,13 @@
+%button{
+    background-color: #ff2d2d;
+    border-radius: 4px;
+    @include font(18px, 700, #fff);
+    text-decoration: none;
+    padding: 10px 60px;
+    &:hover{
+        padding: 6px 56px;
+        border: 2px #ff2d2d solid;
+        color: #ff2d2d;
+        background-color: #fff;
+    }
+}

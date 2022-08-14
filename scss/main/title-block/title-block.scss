@@ -1,0 +1,30 @@
+.title-block{
+    padding: 0 18px 110px 18px;
+    background-color: #f6f2f2;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        }
+    &__content{
+        max-width: 42%;
+        h1{
+            @include font(60px, 800, #000);
+            letter-spacing: 2.5px;
+            line-height: 1.15;
+            text-transform: uppercase;
+        }
+        p{
+            @include font(16px, 400, #000);
+            hyphens: auto;
+            margin: 35px 0 60px 0;
+        }
+        a{
+            @extend %button;
+        }
+    }
+    &__video{
+        iframe{
+            box-shadow: 2px 1px 54px 0px rgba(117,117,117,1);
+        }
+    }
+}
