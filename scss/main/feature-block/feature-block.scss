@@ -19,11 +19,7 @@
             @include font(16px, 400, #333333);
             &:after{
                 content: "";
-                display: block;
-                width: 135px;
-                padding-top: 30px;
-                border-bottom: 3px solid #ff3b3b;
-                margin: 0 auto;
+                @extend %after-elem;
             }
         }
     }
