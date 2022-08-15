@@ -16,8 +16,8 @@
                         background-color: #ff3f40;
                     }
                     a{
-                        text-decoration: none;
                         @include font(14px, 700, #fff);
+                        text-decoration: none;
                     }
                 }
             }

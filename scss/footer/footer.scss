@@ -1,1 +1,18 @@
-// SOON
+.footer{
+    background-color: #313030;
+    padding: 50px 18px 30px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            @include font(16px, 400, #afafaf);
+        }
+        ul{
+            list-style: none;
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

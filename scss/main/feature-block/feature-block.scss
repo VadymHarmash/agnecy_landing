@@ -50,9 +50,9 @@
         div{
             width: calc(25% - 10px);
             height: 300px;
-            background: linear-gradient(blue, pink);
+            background: linear-gradient(lightgray, darkgray);
             &:nth-child(n+5){
-                background: linear-gradient(green, red);
+                background: linear-gradient(darkgray, lightgray);
                 margin-top: 15px;
             }
         }

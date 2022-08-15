@@ -15,12 +15,12 @@
         width: 46%;
         hyphens: auto;
         h2{
-            padding-bottom: 60px;
             @include font(42px, 700, #333333);
+            padding-bottom: 60px;
         }
         p{
-            margin-bottom: 50px;
             @include font(16px, 400, #000);
+            margin-bottom: 50px;
         }
         a{
             @extend %button;
