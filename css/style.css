@@ -49,25 +49,24 @@ select {
 }
 
 .contact-block__menu form a, .subscribe-block__wrapper .email-field a, .provide-block__left a, .title-block__content a {
-  background-color: #ff2d2d;
-  border-radius: 4px;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+  background-color: #ff2d2d;
+  border-radius: 4px;
   text-decoration: none;
-  padding: 10px 60px;
-}
-.contact-block__menu form a:hover, .subscribe-block__wrapper .email-field a:hover, .provide-block__left a:hover, .title-block__content a:hover {
   padding: 6px 56px;
   border: 2px #ff2d2d solid;
-  color: #ff2d2d;
+}
+.contact-block__menu form a:hover, .subscribe-block__wrapper .email-field a:hover, .provide-block__left a:hover, .title-block__content a:hover {
   background-color: #fff;
+  color: #ff2d2d;
 }
 
-.contact-block__wrapper p:after, .team-block p:after, .feature-block__top p:after {
+.contact-block__wrapper p:after, .team-block__title p:after, .feature-block__top p:after {
   display: block;
-  width: 135px;
+  width: 25%;
   padding-top: 30px;
   border-bottom: 3px solid #ff3b3b;
   margin: 0 auto;
@@ -81,15 +80,15 @@ select {
 }
 
 .container {
-  max-width: 1284px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
 .header {
-  padding: 30px 18px 105px 18px;
+  padding: 30px 0 105px 0;
   background-color: #f6f2f2;
 }
-.header__wrapper nav menu {
+.header__wrapper nav ul {
   background-color: #313030;
   margin: 0;
   padding: 0;
@@ -101,13 +100,13 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header__wrapper nav menu li {
+.header__wrapper nav ul li {
   padding: 45px 30px 35px;
 }
-.header__wrapper nav menu li:hover {
+.header__wrapper nav ul li:hover {
   background-color: #ff3f40;
 }
-.header__wrapper nav menu li a {
+.header__wrapper nav ul li a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -116,7 +115,7 @@ select {
 }
 
 .title-block {
-  padding: 0 18px 110px 18px;
+  padding: 0 0 110px;
   background-color: #f6f2f2;
 }
 .title-block__wrapper {
@@ -128,7 +127,7 @@ select {
           justify-content: space-between;
 }
 .title-block__content {
-  max-width: 42%;
+  width: 50%;
 }
 .title-block__content h1 {
   font-family: "Open Sans", sans-serif;
@@ -155,7 +154,7 @@ select {
 }
 
 .provide-block {
-  padding: 110px 18px;
+  padding: 110px 0;
 }
 .provide-block__wrapper {
   display: -webkit-box;
@@ -171,12 +170,12 @@ select {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 54%;
-  padding-left: 70px;
+  width: 60%;
+  padding-left: 25px;
 }
 .provide-block__left {
   padding-right: 70px;
-  width: 46%;
+  width: 40%;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -204,7 +203,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 25px 0;
+  padding: 10px 20px 0;
 }
 .provide-block__items h3 {
   font-family: "Open Sans", sans-serif;
@@ -229,7 +228,7 @@ select {
 }
 
 .feature-block {
-  padding: 110px 18px 30px;
+  padding: 110px 0 30px;
 }
 .feature-block__wrapper {
   display: -webkit-box;
@@ -316,9 +315,9 @@ select {
 }
 
 .team-block {
-  padding: 110px 18px;
+  padding: 110px 0;
 }
-.team-block h2 {
+.team-block__title h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -326,7 +325,7 @@ select {
   padding: 0 0 40px 0;
   text-transform: uppercase;
 }
-.team-block p {
+.team-block__title p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -336,7 +335,7 @@ select {
           hyphens: auto;
   max-width: 36%;
 }
-.team-block p:after {
+.team-block__title p:after {
   content: "";
   margin: 0;
 }
@@ -359,7 +358,16 @@ select {
   background: linear-gradient(#adadad, #ff2d2d);
 }
 .team-block__right {
-  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .team-block__right h3 {
   font-family: "Open Sans", sans-serif;
@@ -369,12 +377,12 @@ select {
   text-transform: uppercase;
 }
 .team-block__right p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
   padding: 30px 0 45px;
-  max-width: 74%;
-}
-.team-block__right p:after {
-  content: "";
-  display: none;
+  max-width: 75%;
 }
 .team-block__right ul {
   font-family: "Open Sans", sans-serif;
@@ -465,7 +473,8 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 265px;
+  margin: 0 auto;
+  width: 60%;
 }
 .subscribe-block__wrapper .email-field input {
   font-family: "Open Sans", sans-serif;
@@ -479,14 +488,11 @@ select {
   border-radius: 5px;
 }
 .subscribe-block__wrapper .email-field a {
-  padding: 26.5px 60px;
-}
-.subscribe-block__wrapper .email-field a:hover {
-  padding: 22.5px 56px;
+  padding: 24.5px 56px;
 }
 
 .contact-block {
-  padding: 110px 18px;
+  padding: 110px 0;
 }
 .contact-block__wrapper h2 {
   font-family: "Open Sans", sans-serif;
@@ -591,7 +597,7 @@ select {
 
 .footer {
   background-color: #313030;
-  padding: 50px 18px 30px;
+  padding: 50px 0 30px;
 }
 .footer__wrapper {
   display: -webkit-box;
@@ -619,4 +625,6 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }

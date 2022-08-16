@@ -1,19 +1,18 @@
 %button{
+    @include font(18px, 700, #fff);
     background-color: #ff2d2d;
     border-radius: 4px;
-    @include font(18px, 700, #fff);
     text-decoration: none;
-    padding: 10px 60px;
+    padding: 6px 56px;
+    border: 2px #ff2d2d solid;
     &:hover{
-        padding: 6px 56px;
-        border: 2px #ff2d2d solid;
-        color: #ff2d2d;
         background-color: #fff;
+        color: #ff2d2d;
     }
 }
 %after-elem{
     display: block;
-    width: 135px;
+    width: 25%;
     padding-top: 30px;
     border-bottom: 3px solid #ff3b3b;
     margin: 0 auto;
