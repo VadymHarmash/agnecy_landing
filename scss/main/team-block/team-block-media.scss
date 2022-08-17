@@ -1,1 +1,115 @@
-// SOON
+@media (max-width: 1250px ) {
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .team-block{
+        padding: 40px 0 60px;
+        text-align: center;
+        &__title{
+            p{
+                width: 75%;
+                margin: 0 auto;
+                &:after{
+                    margin: 0 auto;
+                }
+            }
+        }
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__left{
+            margin: 0 auto;
+            width: 100%;
+            div{
+                width: 30%;
+                height: 200px;
+                margin: 0 auto;
+                background: linear-gradient(#adadad, #ff2d2d);
+                margin-bottom: 50px;
+            }
+        }
+        &__right{
+            margin: 0 auto;
+            p{
+                max-width: 75%;
+                margin: 0 auto;
+            }
+            ul{
+                max-width: 100%;
+                margin: 0 50px;
+            }
+            .pics{
+                margin-top: 30px;
+                &__item{
+                    width: calc(50% - 20px);
+                    margin-top: 20px;
+                    background: linear-gradient(#ff2d2d, #adadad);
+                    position: relative;
+                    div{
+                        padding: 5px 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 767px;
+    }
+    .title-block{
+        &__right{
+            .pics{
+                justify-content: center;
+                &__item{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px ) {
+    .container{
+        max-width: 567px;
+    }
+    .team-block{
+        &__title{
+            text-align: center;
+            h2{
+                @include font(30px, 700, #333333);
+                padding: 0 0 40px 0;
+                text-transform: uppercase;
+            }
+            p{
+                @include font(12px, 400, #333333);
+            }
+        }
+        &__right{
+            h3{
+                @include font(24px, 600, #333333);
+            }
+            p{
+                @include font(12px, 400, #333333);
+            }
+            ul{
+                @include font(12px, 400, #333333);
+            }
+            .pics{
+                margin-top: 55px;
+                &__item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}

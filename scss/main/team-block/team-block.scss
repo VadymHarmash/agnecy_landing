@@ -9,7 +9,7 @@
         p{
             @include font(16px, 400, #333333);
             hyphens: auto;
-            max-width: 36%;
+            width: 36%;
             &:after{
                 content: "";
                 @extend %after-elem;
@@ -24,8 +24,9 @@
     }
     &__left{
         margin-right: 74px;
+        width: 25%;
         div{
-            width: 320px;
+            width: 100%;
             height: 460px;
             background: linear-gradient(#adadad, #ff2d2d);
         }
@@ -56,9 +57,10 @@
         .pics{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-top: 55px;
             &__item{
-                width: 200px;
+                width: 20%;
                 height: 200px;
                 background: linear-gradient(#ff2d2d, #adadad);
                 position: relative;

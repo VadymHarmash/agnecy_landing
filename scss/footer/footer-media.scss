@@ -1,1 +1,47 @@
-// SOON
+@media (max-width: 1250px ) {
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .footer{
+        padding: 35px 0 20px;
+        &__wrapper{
+            flex-direction: column;
+            text-align: center;
+            p{
+                width: 75%;
+                margin: 0 auto;
+                padding: 0 0 20px;
+            }
+            ul{
+                width: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 767px;
+    }
+}
+@media (max-width: 767px ) {
+    .container{
+        max-width: 567px;
+    }
+    .footer{
+        &__wrapper{
+            p{
+                @include font(12px, 400, #afafaf);
+            }
+            ul{
+                width: 75%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}

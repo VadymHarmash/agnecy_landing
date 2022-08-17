@@ -1,1 +1,40 @@
-// SOON
+@media (max-width: 1250px ) {
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 767px;
+    }
+}
+@media (max-width: 767px ) {
+    .container{
+        max-width: 567px;
+    }
+    .header{
+        padding: 10px 0 60px 0;
+        &__wrapper{
+            nav{
+                ul{
+                    justify-content: space-around;
+                    width: 100%;
+                    li{
+                        padding: 15px 0;
+                        a{
+                            @include font(10px, 700, #fff);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
