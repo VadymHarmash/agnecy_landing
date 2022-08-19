@@ -3,13 +3,13 @@
         max-width: 1024px;
         margin: 0 auto;
     }
-    .header{
-        padding-bottom: 50px;
-    }
 }
 @media (max-width: 1024px) {
     .container{
         max-width: 767px;
+    }
+    .header{
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 767px ) {
