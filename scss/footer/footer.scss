@@ -6,15 +6,17 @@
         justify-content: space-between;
         align-items: center;
         p{
-            @include font(16px, 400, #afafaf);
+            @include font(16px, 400, #b8b8b8);
         }
-        ul{
-            list-style: none;
+        nav{
             width: 20%;
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
-            padding: 0;
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+            }
         }
     }
 }

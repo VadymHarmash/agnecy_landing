@@ -3,6 +3,11 @@
         max-width: 1024px;
         margin: 0 auto;
     }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 767px;
+    }
     .contact-block{
         padding: 60px 0;
         &__wrapper{
@@ -49,12 +54,6 @@
                 }
             }
         }
-    }
-
-}
-@media (max-width: 1024px) {
-    .container{
-        max-width: 767px;
     }
 }
 @media (max-width: 767px ) {

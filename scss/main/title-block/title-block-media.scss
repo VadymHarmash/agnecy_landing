@@ -3,22 +3,6 @@
         max-width: 1024px;
         margin: 0 auto;
     }
-    .title-block{
-        padding: 0 0 80px;
-        &__content{
-            width: 40%;
-            h1{
-                @include font(42px, 800, #000);
-            }
-            p{
-
-            }
-        }
-        &__video{
-            width: 50%;
-            margin: 0 auto;
-        }
-    }
 }
 @media (max-width: 1024px) {
     .container{
@@ -69,6 +53,8 @@
     }
     .title-block{
         &__video{
+            width: 50%;
+            margin: 0 auto;
             iframe{
                 width: 100%;
             }

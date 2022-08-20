@@ -20,7 +20,7 @@
             margin: 0 auto;
             width: 60%;
             input{
-                @include font(16px, 400, #939393);
+                @include font(16px, 400, #2c2c2c);
                 width: 70%;
                 height: 80px;
                 padding: 0 0 0 40px;
@@ -29,7 +29,9 @@
             }
             a{
                 @extend %button;
-                padding: 24.5px 56px;
+                text-transform: uppercase;
+                padding: 24.5px 0;
+                width: 25%;
             }
         }
     }
