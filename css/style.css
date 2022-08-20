@@ -210,6 +210,13 @@ body {
     max-width: 1024px;
     margin: 0 auto;
   }
+
+  .title-block__content h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #000000;
+  }
 }
 @media (max-width: 1024px) {
   .container {
@@ -514,7 +521,13 @@ body {
           justify-content: center;
 }
 .feature-block__bottom nav ul li {
-  width: 20%;
+  padding: 0 20px;
+}
+.feature-block__bottom nav ul li:first-child {
+  padding-left: 0;
+}
+.feature-block__bottom nav ul li:last-child {
+  padding-right: 0;
 }
 .feature-block__bottom nav ul li a {
   font-family: "Open Sans", sans-serif;
@@ -537,16 +550,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.feature-block__pics div {
-  width: 300px;
-  height: 300px;
-  background: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(darkgray));
-  background: linear-gradient(lightgray, darkgray);
-}
-.feature-block__pics div:nth-child(n+5) {
-  background: -webkit-gradient(linear, left top, left bottom, from(darkgray), to(lightgray));
-  background: linear-gradient(darkgray, lightgray);
-  margin-top: 15px;
+.feature-block__pics img {
+  width: calc(25% - 10px);
+  margin: 10px 0;
 }
 
 @media (max-width: 1250px) {
@@ -576,7 +582,7 @@ body {
     margin: 0 auto;
   }
   .feature-block__bottom nav {
-    width: 80%;
+    width: 100%;
     margin: 40px auto;
   }
   .feature-block__bottom ul {
@@ -585,18 +591,16 @@ body {
             justify-content: space-between;
   }
   .feature-block__bottom ul li {
-    width: 15%;
+    padding: 0 10px;
   }
-  .feature-block__pics {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .feature-block__bottom ul li:first-child {
+    padding-left: 0;
   }
-  .feature-block__pics div {
-    width: 200px;
-    margin: 15px;
-    height: 200px;
-    background: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(darkgray));
-    background: linear-gradient(lightgray, darkgray);
+  .feature-block__bottom ul li:last-child {
+    padding-right: 0;
+  }
+  .feature-block__pics img {
+    width: calc(50% - 10px);
   }
 }
 @media (max-width: 767px) {
@@ -616,7 +620,7 @@ body {
   }
   .feature-block__top p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: #333333;
   }
@@ -626,29 +630,29 @@ body {
             justify-content: space-between;
   }
   .feature-block__bottom nav ul li {
-    width: 10%;
+    padding: 0 5px;
   }
   .feature-block__bottom nav ul li:first-child {
-    width: 5%;
+    padding-left: 0;
   }
   .feature-block__bottom nav ul li:last-child {
-    width: 5%;
+    padding-right: 0;
   }
   .feature-block__bottom nav ul li a {
     font-family: "Open Sans", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     color: #333333;
-  }
-  .feature-block__pics div {
-    background: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(darkgray));
-    background: linear-gradient(lightgray, darkgray);
   }
 }
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
     padding: 0 10px;
+  }
+
+  .feature-block__pics img {
+    width: calc(100% - 10px);
   }
 }
 .team-block {
@@ -758,6 +762,10 @@ body {
   width: calc(25% - 10px);
   position: relative;
 }
+.team-block__right .pics__item img {
+  width: 100%;
+  height: 100%;
+}
 .team-block__right .pics__item div {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -833,6 +841,7 @@ body {
   .team-block__right .pics__item {
     position: relative;
     width: calc(50% - 10px);
+    margin: 10px 0;
   }
   .team-block__right .pics__item div {
     padding: 5px 0;
@@ -886,13 +895,7 @@ body {
   }
   .team-block__right .pics__item {
     width: calc(50% - 10px);
-  }
-  .team-block__right .pics__item div {
-    margin-top: 10px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    color: #ffffff;
+    margin: 5px 0;
   }
 }
 @media (max-width: 576px) {
@@ -903,7 +906,6 @@ body {
 
   .team-block__right .pics__item {
     width: calc(100% - 10px);
-    margin-top: 10px;
   }
   .team-block__right .pics__item div {
     font-family: "Open Sans", sans-serif;

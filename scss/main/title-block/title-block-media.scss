@@ -3,6 +3,13 @@
         max-width: 1024px;
         margin: 0 auto;
     }
+    .title-block{
+        &__content{
+            h1{
+                @include font(48px, 800, #000000);
+            }
+        }
+    }
 }
 @media (max-width: 1024px) {
     .container{
