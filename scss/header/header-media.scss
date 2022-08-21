@@ -21,10 +21,9 @@
         &__wrapper{
             nav{
                 ul{
-                    justify-content: space-around;
                     width: 100%;
                     li{
-                        padding: 15px 0;
+                        padding: 15px 10px;
                         a{
                             @include font(10px, 700, #fff);
                             text-decoration: none;

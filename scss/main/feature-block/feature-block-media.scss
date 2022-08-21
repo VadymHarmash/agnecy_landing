@@ -28,7 +28,7 @@
             ul{
                 justify-content: space-between;
                 li{
-                    padding: 0 10px;
+                    padding: 0 5px;
                     &:first-child{
                         padding-left: 0;
                     }
@@ -89,7 +89,7 @@
     .feature-block{
         &__pics{
             img{
-                width: calc(100% - 10px);
+                width: 100%;
             }
         }
     }
