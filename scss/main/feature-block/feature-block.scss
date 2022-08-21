@@ -33,14 +33,9 @@
                 list-style: none;
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 li{
-                    padding: 0 20px;
-                    &:first-child{
-                        padding-left: 0;
-                    }
-                    &:last-child{
-                        padding-right: 0;
-                    }
+                    width: 20%;
                     a{
                         @include font(22px, 600, #000000);
                         text-decoration: none;
