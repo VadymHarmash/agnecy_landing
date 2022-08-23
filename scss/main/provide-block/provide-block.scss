@@ -10,8 +10,11 @@
         width: 57%;
     }
     &__left{
-        width: 41%;
+        width: 43%;
         hyphens: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         h2{
             @include font(42px, 700, #000000);
             padding-bottom: 60px;

@@ -56,8 +56,10 @@ select {
   background-color: #ff2d2d;
   border-radius: 4px;
   text-decoration: none;
-  padding: 6px 56px;
+  padding: 10px 0;
   border: 2px #ff2d2d solid;
+  width: 40%;
+  text-align: center;
 }
 .contact-block__menu form a:hover, .subscribe-block__wrapper .email-field a:hover, .provide-block__left a:hover, .title-block__content a:hover {
   background-color: #fff;
@@ -177,7 +179,17 @@ body {
           align-items: center;
 }
 .title-block__content {
-  width: 50%;
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .title-block__content h1 {
   font-family: "Open Sans", sans-serif;
@@ -297,10 +309,20 @@ body {
   width: 57%;
 }
 .provide-block__left {
-  width: 41%;
+  width: 43%;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .provide-block__left h2 {
   font-family: "Open Sans", sans-serif;
@@ -538,7 +560,8 @@ body {
 }
 .feature-block__pics img {
   width: calc(25% - 10px);
-  margin: 10px 0;
+  margin: 5px 0;
+  height: 300px;
 }
 
 @media (max-width: 1250px) {
@@ -568,7 +591,7 @@ body {
     margin: 0 auto;
   }
   .feature-block__bottom nav {
-    width: 100%;
+    width: 80%;
     margin: 40px auto;
   }
   .feature-block__bottom ul {
@@ -615,12 +638,6 @@ body {
   .feature-block__bottom nav ul li {
     width: 100%;
     margin-top: 15px;
-  }
-  .feature-block__bottom nav ul li a {
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    color: #333333;
   }
 }
 @media (max-width: 576px) {
@@ -678,7 +695,7 @@ body {
 }
 .team-block__left img {
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
 .team-block__right {
   display: -webkit-box;
