@@ -27,6 +27,7 @@
                         a{
                             @include font(10px, 700, #fff);
                             text-decoration: none;
+                            padding: 0;
                         }
                     }
                 }

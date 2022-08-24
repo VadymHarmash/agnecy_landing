@@ -11,13 +11,14 @@
                 display: flex;
                 justify-content: center;
                 li{
-                    padding: 45px 30px 35px;
+                    padding: 45px 0 35px;
                     &:hover{
                         background-color: #ff3f40;
                     }
                     a{
                         @include font(14px, 700, #e0e0e0);
                         text-decoration: none;
+                        padding: 45px 30px 35px;
                     }
                 }
             }
