@@ -11,12 +11,12 @@
         width: 42%;
         margin: 0 auto;
         h2{
-            @include font(42px, 700, #000000);
+            @include font(42pt, 700, #000000);
             text-transform: uppercase;
             margin: 0 0 35px 0;
         }
         p{
-            @include font(16px, 400, #000000);
+            @include font(16pt, 400, #000000);
             &:after{
                 content: "";
                 @extend %after-elem;
@@ -37,7 +37,7 @@
                 li{
                     width: 20%;
                     a{
-                        @include font(22px, 600, #000000);
+                        @include font(22pt, 600, #000000);
                         text-decoration: none;
                         text-transform: uppercase;
                         &:hover{

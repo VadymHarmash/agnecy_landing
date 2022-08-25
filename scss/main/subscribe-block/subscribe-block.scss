@@ -7,10 +7,10 @@
         flex-direction: column;
         justify-content: space-around;
         h2{
-            @include font(42px, 700, #f6f2f2);
+            @include font(42pt, 700, #f6f2f2);
         }
         p{
-            @include font(16px, 400, #f6f2f2);
+            @include font(16pt, 400, #f6f2f2);
             padding: 40px 0 55px;
         }
         .email-field{
@@ -18,10 +18,10 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
-            width: 60%;
+            width: 80%;
             input{
-                @include font(16px, 400, #2c2c2c);
-                width: 70%;
+                @include font(16pt, 400, #2c2c2c);
+                width: 75%;
                 height: 80px;
                 padding: 0 0 0 40px;
                 border: none;
@@ -30,8 +30,8 @@
             a{
                 @extend %button;
                 text-transform: uppercase;
-                padding: 24.5px 0;
-                width: 25%;
+                padding: 20px 0;
+                width: 20%;
             }
         }
     }

@@ -33,7 +33,7 @@
             margin: 0 auto;
             align-items: center;
             h3{
-                @include font(24px, 600, #585858);
+                @include font(24px, 600, #000000);
                 padding: 35px 0 15px 0;
             }
             img{
@@ -41,7 +41,7 @@
                 max-height: 30px;
             }
             p{
-                @include font(16px, 400, #333333);
+                @include font(16px, 400, #000000);
                 hyphens: auto;
                 width: 75%;
                 margin: 0 auto;
@@ -56,22 +56,22 @@
     .provide-block{
         &__left{
             h2{
-                @include font(30px, 700, #333333);
+                @include font(30px, 700, #000000);
                 padding-bottom: 40px;
             }
             p{
-                @include font(12px, 400, #000);
+                @include font(16px, 400, #000000);
                 margin-bottom: 30px;
             }
         }
         &__items{
             width: 100%;
             h3{
-                @include font(20px, 600, #585858);
+                @include font(20px, 600, #000000);
                 padding-top: 20px;
             }
             p{
-                @include font(12px, 400, #333333);
+                @include font(16px, 400, #000000);
             }
         }
     }
@@ -80,5 +80,27 @@
     .container{
         max-width: 100%;
         padding: 0 10px;
+    }
+    .provide-block{
+        &__left{
+            h2{
+                @include font(24px, 700, #000000);
+                padding-bottom: 40px;
+            }
+            p{
+                @include font(12px, 400, #000000);
+                margin-bottom: 30px;
+            }
+        }
+        &__items{
+            width: 100%;
+            h3{
+                @include font(18px, 600, #000000);
+                padding-top: 20px;
+            }
+            p{
+                @include font(12px, 400, #000000);
+            }
+        }
     }
 }

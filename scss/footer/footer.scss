@@ -6,7 +6,7 @@
         justify-content: space-between;
         align-items: center;
         p{
-            @include font(16px, 400, #b8b8b8);
+            @include font(16pt, 400, #b8b8b8);
         }
         nav{
             width: 20%;

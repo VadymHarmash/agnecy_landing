@@ -40,7 +40,7 @@
             }
             nav{
                 ul{
-                    width: 75%;
+                    width: 100%;
                     margin: 0 auto;
                 }
             }
@@ -67,25 +67,26 @@
         &__title{
             text-align: center;
             h2{
-                @include font(30px, 700, #333333);
+                @include font(28px, 700, #000000);
                 padding: 0 0 40px 0;
                 text-transform: uppercase;
             }
             p{
-                @include font(12px, 400, #333333);
+                @include font(16px, 400, #000000);
             }
         }
         &__right{
             width: 100%;
             h3{
-                @include font(24px, 600, #333333);
+                @include font(22px, 600, #000000);
             }
             p{
-                @include font(12px, 400, #333333);
+                @include font(16px, 400, #000000);
             }
             nav{
                 ul{
-                    @include font(12px, 400, #333333);
+                    width: 75%;
+                    @include font(16px, 400, #000000);
                 }
             }
             .pics{
@@ -105,6 +106,14 @@
         padding: 0 10px;
     }
     .team-block{
+        &__title{
+            h3{
+                @include font(20px, 600, #000000);
+            }
+            p{
+                @include font(12px, 400, #000000);
+            }
+        }
         &__right{
             .pics{
                 width: 100%;
@@ -113,6 +122,14 @@
                         @include font(12px, 600, #ffffff);
                     }
                 }
+            }
+            nav{
+                ul{
+                    @include font(12px, 400, #000000);
+                }
+            }
+            p{
+                @include font(12px, 400, #000000);
             }
         }
     }

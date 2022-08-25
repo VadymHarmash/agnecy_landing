@@ -46,10 +46,10 @@
     .title-block{
         &__content{
             h1{
-                @include font(30px, 800, #000);
+                @include font(30px, 800, #000000);
             }
             p{
-                @include font(12px, 400, #000);
+                @include font(16px, 400, #000000);
             }
         }
     }
@@ -58,5 +58,12 @@
     .container{
         max-width: 100%;
         padding: 0 10px;
+    }
+    .title-block{
+        &__content{
+            p{
+                @include font(12px, 400, #000000);
+            }
+        }
     }
 }

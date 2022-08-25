@@ -35,7 +35,7 @@
     .footer{
         &__wrapper{
             p{
-                @include font(12px, 400, #afafaf);
+                @include font(16px, 400, #b8b8b8);
             }
             nav{
                 ul{
@@ -49,5 +49,12 @@
     .container{
         max-width: 100%;
         padding: 0 10px;
+    }
+    .footer{
+        &__wrapper{
+            p{
+                @include font(12px, 400, #b8b8b8);
+            }
+        }
     }
 }

@@ -50,7 +50,7 @@ select {
 
 .contact-block__menu form a, .subscribe-block__wrapper .email-field a, .provide-block__left a, .title-block__content a {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 18pt;
   font-weight: 700;
   color: #ffffff;
   background-color: #ff2d2d;
@@ -64,6 +64,16 @@ select {
 .contact-block__menu form a:hover, .subscribe-block__wrapper .email-field a:hover, .provide-block__left a:hover, .title-block__content a:hover {
   background-color: #fff;
   color: #ff2d2d;
+}
+@media (max-width: 767px) {
+  .contact-block__menu form a, .subscribe-block__wrapper .email-field a, .provide-block__left a, .title-block__content a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-block__menu form a, .subscribe-block__wrapper .email-field a, .provide-block__left a, .title-block__content a {
+    font-size: 12px;
+  }
 }
 
 .contact-block__wrapper p:after, .team-block__title p:after, .feature-block__top p:after {
@@ -114,7 +124,7 @@ body {
 }
 .header__wrapper nav ul li a {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 14pt;
   font-weight: 700;
   color: #e0e0e0;
   text-decoration: none;
@@ -152,9 +162,9 @@ body {
   }
   .header__wrapper nav ul li a {
     font-family: "Open Sans", sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 700;
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
     padding: 0;
   }
@@ -163,6 +173,21 @@ body {
   .container {
     max-width: 100%;
     padding: 0 10px;
+  }
+
+  .header {
+    padding: 10px 0 60px 0;
+  }
+  .header__wrapper nav ul li {
+    padding: 15px 10px;
+  }
+  .header__wrapper nav ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 0;
   }
 }
 .title-block {
@@ -181,7 +206,7 @@ body {
           align-items: center;
 }
 .title-block__content {
-  width: 43%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +220,7 @@ body {
 }
 .title-block__content h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 60px;
+  font-size: 60pt;
   font-weight: 800;
   color: #000000;
   letter-spacing: 2.5px;
@@ -204,7 +229,7 @@ body {
 }
 .title-block__content p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
   -webkit-hyphens: auto;
@@ -212,9 +237,13 @@ body {
           hyphens: auto;
   margin: 35px 0 60px 0;
 }
+.title-block__video {
+  width: 40%;
+}
 .title-block__video iframe {
   -webkit-box-shadow: 2px 1px 54px 0px rgb(117, 117, 117);
           box-shadow: 2px 1px 54px 0px rgb(117, 117, 117);
+  width: 100%;
 }
 
 @media (max-width: 1250px) {
@@ -279,19 +308,26 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
     font-weight: 800;
-    color: #000;
+    color: #000000;
   }
   .title-block__content p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #000;
+    color: #000000;
   }
 }
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
     padding: 0 10px;
+  }
+
+  .title-block__content p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
   }
 }
 .provide-block {
@@ -311,19 +347,16 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 57%;
+  width: 50%;
 }
 .provide-block__left {
-  width: 43%;
+  width: 45%;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -331,14 +364,14 @@ body {
 }
 .provide-block__left h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 42px;
+  font-size: 42pt;
   font-weight: 700;
   color: #000000;
   padding-bottom: 60px;
 }
 .provide-block__left p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
   margin-bottom: 50px;
@@ -356,7 +389,7 @@ body {
 }
 .provide-block__items h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 24pt;
   font-weight: 600;
   color: #000000;
   padding: 35px 0 15px 0;
@@ -367,7 +400,7 @@ body {
 }
 .provide-block__items p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
   -webkit-hyphens: auto;
@@ -424,7 +457,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: #585858;
+    color: #000000;
     padding: 35px 0 15px 0;
   }
   .provide-block__items img {
@@ -435,7 +468,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #333333;
+    color: #000000;
     -webkit-hyphens: auto;
         -ms-hyphens: auto;
             hyphens: auto;
@@ -452,14 +485,14 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #333333;
+    color: #000000;
     padding-bottom: 40px;
   }
   .provide-block__left p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #000;
+    color: #000000;
     margin-bottom: 30px;
   }
   .provide-block__items {
@@ -469,20 +502,51 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     font-weight: 600;
-    color: #585858;
+    color: #000000;
     padding-top: 20px;
   }
   .provide-block__items p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #333333;
+    color: #000000;
   }
 }
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
     padding: 0 10px;
+  }
+
+  .provide-block__left h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 40px;
+  }
+  .provide-block__left p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .provide-block__items {
+    width: 100%;
+  }
+  .provide-block__items h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    padding-top: 20px;
+  }
+  .provide-block__items p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
   }
 }
 .feature-block {
@@ -510,7 +574,7 @@ body {
 }
 .feature-block__top h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 42px;
+  font-size: 42pt;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -518,7 +582,7 @@ body {
 }
 .feature-block__top p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
 }
@@ -547,7 +611,7 @@ body {
 }
 .feature-block__bottom nav ul li a {
   font-family: "Open Sans", sans-serif;
-  font-size: 22px;
+  font-size: 22pt;
   font-weight: 600;
   color: #000000;
   text-decoration: none;
@@ -633,14 +697,14 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 28px;
     font-weight: 700;
-    color: #333333;
+    color: #000000;
     margin: 0 0 25px 0;
   }
   .feature-block__top p {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    color: #333333;
+    color: #000000;
   }
   .feature-block__bottom nav ul {
     -ms-flex-pack: distribute;
@@ -660,13 +724,25 @@ body {
   .feature-block__pics img {
     height: 80%;
   }
+  .feature-block__top h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .feature-block__top p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+  }
 }
 .team-block {
   padding: 110px 0;
 }
 .team-block__title h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 42px;
+  font-size: 42pt;
   font-weight: 700;
   color: #000000;
   padding: 0 0 40px 0;
@@ -674,7 +750,7 @@ body {
 }
 .team-block__title p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
   -webkit-hyphens: auto;
@@ -723,14 +799,14 @@ body {
 }
 .team-block__right h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 30pt;
   font-weight: 600;
   color: #000000;
   text-transform: uppercase;
 }
 .team-block__right p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
   padding: 30px 0 45px;
@@ -738,7 +814,7 @@ body {
 }
 .team-block__right nav ul {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 18pt;
   font-weight: 400;
   color: #000000;
   display: -webkit-box;
@@ -774,7 +850,7 @@ body {
 }
 .team-block__right .pics__item div {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 18pt;
   font-weight: 600;
   color: #ffffff;
   display: none;
@@ -838,7 +914,7 @@ body {
     margin: 0 auto;
   }
   .team-block__right nav ul {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
   }
   .team-block__right .pics {
@@ -864,38 +940,39 @@ body {
   }
   .team-block__title h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
-    color: #333333;
+    color: #000000;
     padding: 0 0 40px 0;
     text-transform: uppercase;
   }
   .team-block__title p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #333333;
+    color: #000000;
   }
   .team-block__right {
     width: 100%;
   }
   .team-block__right h3 {
     font-family: "Open Sans", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    color: #333333;
+    color: #000000;
   }
   .team-block__right p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #333333;
+    color: #000000;
   }
   .team-block__right nav ul {
+    width: 75%;
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #333333;
+    color: #000000;
   }
   .team-block__right .pics {
     margin-top: 55px;
@@ -913,6 +990,18 @@ body {
     padding: 0 10px;
   }
 
+  .team-block__title h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .team-block__title p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+  }
   .team-block__right .pics {
     width: 100%;
   }
@@ -921,6 +1010,18 @@ body {
     font-size: 12px;
     font-weight: 600;
     color: #ffffff;
+  }
+  .team-block__right nav ul {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .team-block__right p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
   }
 }
 .subscribe-block {
@@ -941,13 +1042,13 @@ body {
 }
 .subscribe-block__wrapper h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 42px;
+  font-size: 42pt;
   font-weight: 700;
   color: #f6f2f2;
 }
 .subscribe-block__wrapper p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #f6f2f2;
   padding: 40px 0 55px;
@@ -963,14 +1064,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
 }
 .subscribe-block__wrapper .email-field input {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #2c2c2c;
-  width: 70%;
+  width: 75%;
   height: 80px;
   padding: 0 0 0 40px;
   border: none;
@@ -978,8 +1079,8 @@ body {
 }
 .subscribe-block__wrapper .email-field a {
   text-transform: uppercase;
-  padding: 24.5px 0;
-  width: 25%;
+  padding: 20px 0;
+  width: 20%;
 }
 
 @media (max-width: 1250px) {
@@ -1017,14 +1118,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #939393;
-    height: 80px;
-    padding: 0 0 0 40px;
-    border: none;
-    border-radius: 5px;
-  }
-  .subscribe-block__wrapper .email-field a {
-    padding: 24px 0;
+    color: #2c2c2c;
   }
 }
 @media (max-width: 767px) {
@@ -1035,6 +1129,36 @@ body {
   .subscribe-block__wrapper h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
+    font-weight: 700;
+    color: #f6f2f2;
+  }
+  .subscribe-block__wrapper p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f6f2f2;
+    padding: 30px 0 40px;
+  }
+  .subscribe-block__wrapper .email-field input {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2c2c2c;
+    height: 60px;
+  }
+  .subscribe-block__wrapper .email-field a {
+    padding: 16px 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .subscribe-block__wrapper h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
     font-weight: 700;
     color: #f6f2f2;
   }
@@ -1060,25 +1184,19 @@ body {
     padding: 18px 0;
   }
 }
-@media (max-width: 576px) {
-  .container {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-}
 .contact-block {
   padding: 110px 0;
 }
 .contact-block__wrapper h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 42px;
+  font-size: 42pt;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
 .contact-block__wrapper p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
   width: 58%;
@@ -1110,7 +1228,7 @@ body {
 }
 .contact-block__menu form input {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 18pt;
   font-weight: 400;
   color: #000000;
   width: 46%;
@@ -1118,7 +1236,7 @@ body {
 }
 .contact-block__menu form textarea {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #000000;
   margin: 45px 0;
@@ -1149,7 +1267,7 @@ body {
 }
 .contact-block__menu div h4 {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 18pt;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
@@ -1157,7 +1275,7 @@ body {
 }
 .contact-block__menu div p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #ffffff;
   padding: 0;
@@ -1245,6 +1363,52 @@ body {
   }
   .contact-block__wrapper p {
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .contact-block__menu form input {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .contact-block__menu form textarea {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .contact-block__menu div h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d5d5d5;
+  }
+  .contact-block__menu div p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #d5d5d5;
+  }
+  .contact-block__menu div p:nth-child(3) {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .contact-block__wrapper h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+  }
+  .contact-block__wrapper p {
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: 400;
     color: #333333;
@@ -1273,15 +1437,6 @@ body {
     font-weight: 400;
     color: #d5d5d5;
   }
-  .contact-block__menu div p:nth-child(3) {
-    padding: 20px 0;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 100%;
-    padding: 0 10px;
-  }
 }
 .footer {
   background-color: #313030;
@@ -1300,7 +1455,7 @@ body {
 }
 .footer__wrapper p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   color: #b8b8b8;
 }
@@ -1360,9 +1515,9 @@ body {
 
   .footer__wrapper p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #afafaf;
+    color: #b8b8b8;
   }
   .footer__wrapper nav ul {
     width: 75%;
@@ -1372,5 +1527,12 @@ body {
   .container {
     max-width: 100%;
     padding: 0 10px;
+  }
+
+  .footer__wrapper p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #b8b8b8;
   }
 }

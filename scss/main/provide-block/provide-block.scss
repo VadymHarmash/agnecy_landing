@@ -7,20 +7,19 @@
     &__right{
         display: flex;
         flex-wrap: wrap;
-        width: 57%;
+        width: 50%;
     }
     &__left{
-        width: 43%;
+        width: 45%;
         hyphens: auto;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         h2{
-            @include font(42px, 700, #000000);
+            @include font(42pt, 700, #000000);
             padding-bottom: 60px;
         }
         p{
-            @include font(16px, 400, #000000);
+            @include font(16pt, 400, #000000);
             margin-bottom: 50px;
         }
         a{
@@ -33,7 +32,7 @@
         flex-direction: column;
         padding: 10px 20px 0;
         h3{
-            @include font(24px, 600, #000000);
+            @include font(24pt, 600, #000000);
             padding: 35px 0 15px 0;
         }
         img{
@@ -41,7 +40,7 @@
             max-height: 30px;
         }
         p{
-            @include font(16px, 400, #000000);
+            @include font(16pt, 400, #000000);
             hyphens: auto;
             padding: 0 0 50px;
         }
