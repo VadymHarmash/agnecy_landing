@@ -91,6 +91,15 @@ select {
   padding-left: 45px;
 }
 
+.title-block__video, .header__wrapper nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body {
   color: #fefefe;
 }
@@ -112,9 +121,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .header__wrapper nav ul li {
   padding: 45px 0 35px;
@@ -154,17 +160,11 @@ body {
   .header {
     padding: 10px 0 60px 0;
   }
-  .header__wrapper nav ul {
-    width: 100%;
-  }
   .header__wrapper nav ul li {
     padding: 15px 10px;
   }
   .header__wrapper nav ul li a {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 700;
-    color: #e0e0e0;
     text-decoration: none;
     padding: 0;
   }
@@ -178,16 +178,8 @@ body {
   .header {
     padding: 10px 0 60px 0;
   }
-  .header__wrapper nav ul li {
-    padding: 15px 10px;
-  }
   .header__wrapper nav ul li a {
-    font-family: "Open Sans", sans-serif;
     font-size: 10px;
-    font-weight: 700;
-    color: #e0e0e0;
-    text-decoration: none;
-    padding: 0;
   }
 }
 .title-block {
@@ -210,13 +202,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .title-block__content h1 {
   font-family: "Open Sans", sans-serif;
@@ -239,6 +231,9 @@ body {
 }
 .title-block__video {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .title-block__video iframe {
   -webkit-box-shadow: 2px 1px 54px 0px rgb(117, 117, 117);
@@ -253,10 +248,7 @@ body {
   }
 
   .title-block__content h1 {
-    font-family: "Open Sans", sans-serif;
     font-size: 48px;
-    font-weight: 800;
-    color: #000000;
   }
 }
 @media (max-width: 1024px) {
@@ -272,9 +264,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .title-block__content {
     text-align: center;
@@ -289,12 +278,6 @@ body {
     margin: 30px auto 50px;
   }
   .title-block__video {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 100%;
     padding-top: 50px;
   }
@@ -305,16 +288,10 @@ body {
   }
 
   .title-block__content h1 {
-    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    font-weight: 800;
-    color: #000000;
   }
   .title-block__content p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
   }
 }
 @media (max-width: 576px) {
@@ -324,10 +301,7 @@ body {
   }
 
   .title-block__content p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #000000;
   }
 }
 .provide-block {
@@ -428,8 +402,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto;
     text-align: center;
+  }
+  .provide-block__right {
+    width: 100%;
   }
   .provide-block__left {
     width: 100%;
@@ -442,10 +418,6 @@ body {
     width: 75%;
     margin: 0 auto 40px;
   }
-  .provide-block__right {
-    width: 100%;
-    padding: 0;
-  }
   .provide-block__items {
     width: calc(50% - 10px);
     margin: 0 auto;
@@ -454,24 +426,11 @@ body {
             align-items: center;
   }
   .provide-block__items h3 {
-    font-family: "Open Sans", sans-serif;
     font-size: 24px;
-    font-weight: 600;
-    color: #000000;
-    padding: 35px 0 15px 0;
-  }
-  .provide-block__items img {
-    max-width: 30px;
-    max-height: 30px;
+    padding: 35px 0 15px;
   }
   .provide-block__items p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
     width: 75%;
     margin: 0 auto;
   }
@@ -482,34 +441,22 @@ body {
   }
 
   .provide-block__left h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    font-weight: 700;
-    color: #000000;
     padding-bottom: 40px;
   }
   .provide-block__left p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
     margin-bottom: 30px;
   }
   .provide-block__items {
     width: 100%;
   }
   .provide-block__items h3 {
-    font-family: "Open Sans", sans-serif;
     font-size: 20px;
-    font-weight: 600;
-    color: #000000;
     padding-top: 20px;
   }
   .provide-block__items p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
   }
 }
 @media (max-width: 576px) {
@@ -519,34 +466,16 @@ body {
   }
 
   .provide-block__left h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    padding-bottom: 40px;
   }
   .provide-block__left p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #000000;
-    margin-bottom: 30px;
   }
   .provide-block__items {
     width: 100%;
   }
   .provide-block__items h3 {
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-    padding-top: 20px;
-  }
-  .provide-block__items p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: #000000;
   }
 }
 .feature-block {
@@ -672,10 +601,7 @@ body {
             justify-content: space-between;
   }
   .feature-block__bottom nav ul li a {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 600;
-    color: #000000;
   }
   .feature-block__pics {
     width: 80%;
@@ -690,21 +616,12 @@ body {
     max-width: 567px;
   }
 
-  .feature-block__top {
-    width: 100%;
-  }
   .feature-block__top h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 28px;
-    font-weight: 700;
-    color: #000000;
     margin: 0 0 25px 0;
   }
   .feature-block__top p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
   }
   .feature-block__bottom nav ul {
     -ms-flex-pack: distribute;
@@ -725,16 +642,10 @@ body {
     height: 80%;
   }
   .feature-block__top h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 24px;
-    font-weight: 700;
-    color: #000000;
   }
   .feature-block__top p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #000000;
   }
 }
 .team-block {
@@ -910,7 +821,7 @@ body {
     margin: 0 auto;
   }
   .team-block__right p {
-    max-width: 75%;
+    max-width: 100%;
     margin: 0 auto;
   }
   .team-block__right nav ul {
@@ -921,13 +832,8 @@ body {
     margin-top: 30px;
   }
   .team-block__right .pics__item {
-    position: relative;
     width: calc(50% - 10px);
     margin: 10px 0;
-  }
-  .team-block__right .pics__item div {
-    padding: 5px 0;
-    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -939,40 +845,23 @@ body {
     text-align: center;
   }
   .team-block__title h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 28px;
-    font-weight: 700;
-    color: #000000;
-    padding: 0 0 40px 0;
-    text-transform: uppercase;
   }
   .team-block__title p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
   }
   .team-block__right {
     width: 100%;
   }
   .team-block__right h3 {
-    font-family: "Open Sans", sans-serif;
     font-size: 22px;
-    font-weight: 600;
-    color: #000000;
   }
   .team-block__right p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
   }
   .team-block__right nav ul {
     width: 75%;
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
   }
   .team-block__right .pics {
     margin-top: 55px;
@@ -1006,22 +895,13 @@ body {
     width: 100%;
   }
   .team-block__right .pics__item div {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 600;
-    color: #ffffff;
   }
   .team-block__right nav ul {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #000000;
   }
   .team-block__right p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #000000;
   }
 }
 .subscribe-block {
@@ -1098,27 +978,16 @@ body {
     padding: 90px 0;
   }
   .subscribe-block__wrapper h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 42px;
-    font-weight: 700;
-    color: #f6f2f2;
   }
   .subscribe-block__wrapper p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #f6f2f2;
-    padding: 40px 0 55px;
   }
   .subscribe-block__wrapper .email-field {
-    margin: 0 auto;
     width: 100%;
   }
   .subscribe-block__wrapper .email-field input {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #2c2c2c;
   }
 }
 @media (max-width: 767px) {
@@ -1127,23 +996,14 @@ body {
   }
 
   .subscribe-block__wrapper h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    font-weight: 700;
-    color: #f6f2f2;
   }
   .subscribe-block__wrapper p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #f6f2f2;
     padding: 30px 0 40px;
   }
   .subscribe-block__wrapper .email-field input {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #2c2c2c;
     height: 60px;
   }
   .subscribe-block__wrapper .email-field a {
@@ -1157,30 +1017,16 @@ body {
   }
 
   .subscribe-block__wrapper h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 24px;
-    font-weight: 700;
-    color: #f6f2f2;
   }
   .subscribe-block__wrapper p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #f6f2f2;
-    padding: 30px 0 40px;
   }
   .subscribe-block__wrapper .email-field input {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #939393;
-    height: 60px;
   }
   .subscribe-block__wrapper .email-field a {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 700;
-    color: #ffffff;
     padding: 18px 0;
   }
 }
@@ -1325,19 +1171,13 @@ body {
     width: 100%;
   }
   .contact-block__menu form input {
-    width: 45%;
-    height: 60px;
     padding: 15px 0 15px 20px;
   }
   .contact-block__menu form textarea {
-    margin: 45px 0;
-    width: 100%;
-    height: 245px;
     padding: 20px 0 0 20px;
   }
   .contact-block__menu form a {
     margin: 0 auto;
-    padding: 15px 0;
   }
   .contact-block__menu div {
     width: 100%;
@@ -1356,40 +1196,22 @@ body {
   }
 
   .contact-block__wrapper h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    font-weight: 700;
-    color: #333333;
   }
   .contact-block__wrapper p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #333333;
   }
   .contact-block__menu form input {
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    color: #333333;
   }
   .contact-block__menu form textarea {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #333333;
   }
   .contact-block__menu div h4 {
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    font-weight: 700;
-    color: #d5d5d5;
   }
   .contact-block__menu div p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #d5d5d5;
   }
   .contact-block__menu div p:nth-child(3) {
     padding: 20px 0;
@@ -1402,40 +1224,22 @@ body {
   }
 
   .contact-block__wrapper h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 24px;
-    font-weight: 700;
-    color: #333333;
   }
   .contact-block__wrapper p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #333333;
   }
   .contact-block__menu form input {
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    font-weight: 400;
-    color: #333333;
   }
   .contact-block__menu form textarea {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #333333;
   }
   .contact-block__menu div h4 {
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    font-weight: 700;
-    color: #d5d5d5;
   }
   .contact-block__menu div p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #d5d5d5;
   }
 }
 .footer {
@@ -1514,10 +1318,7 @@ body {
   }
 
   .footer__wrapper p {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #b8b8b8;
   }
   .footer__wrapper nav ul {
     width: 75%;
@@ -1530,9 +1331,6 @@ body {
   }
 
   .footer__wrapper p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    color: #b8b8b8;
   }
 }

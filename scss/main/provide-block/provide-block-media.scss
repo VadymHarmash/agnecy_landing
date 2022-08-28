@@ -12,8 +12,10 @@
         padding: 30px 0;
         &__wrapper{
             flex-direction: column;
-            margin: 0 auto;
             text-align: center;
+        }
+        &__right{
+            width: 100%;
         }
         &__left{
             width: 100%;
@@ -24,25 +26,16 @@
                 margin: 0 auto 40px;
             }
         }
-        &__right{
-            width: 100%;
-            padding: 0;
-        }
         &__items{
             width: calc(50% - 10px);
             margin: 0 auto;
             align-items: center;
             h3{
-                @include font(24px, 600, #000000);
-                padding: 35px 0 15px 0;
-            }
-            img{
-                max-width: 30px;
-                max-height: 30px;
+                font-size: 24px;
+                padding: 35px 0 15px;
             }
             p{
-                @include font(16px, 400, #000000);
-                hyphens: auto;
+                font-size: 16px;
                 width: 75%;
                 margin: 0 auto;
             }
@@ -56,22 +49,22 @@
     .provide-block{
         &__left{
             h2{
-                @include font(30px, 700, #000000);
+                font-size: 30px;
                 padding-bottom: 40px;
             }
             p{
-                @include font(16px, 400, #000000);
+                font-size: 16px;
                 margin-bottom: 30px;
             }
         }
         &__items{
             width: 100%;
             h3{
-                @include font(20px, 600, #000000);
+                font-size: 20px;
                 padding-top: 20px;
             }
             p{
-                @include font(16px, 400, #000000);
+                font-size: 16px;
             }
         }
     }
@@ -84,22 +77,16 @@
     .provide-block{
         &__left{
             h2{
-                @include font(24px, 700, #000000);
-                padding-bottom: 40px;
+                font-size: 24px;
             }
             p{
-                @include font(12px, 400, #000000);
-                margin-bottom: 30px;
+                font-size: 12px;
             }
         }
         &__items{
             width: 100%;
             h3{
-                @include font(18px, 600, #000000);
-                padding-top: 20px;
-            }
-            p{
-                @include font(12px, 400, #000000);
+                font-size: 18px;
             }
         }
     }

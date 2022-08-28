@@ -28,7 +28,7 @@
                     justify-content: space-between;
                     li{
                         a{
-                            @include font(16px, 600, #000000);
+                            font-size: 16px;
                         }
                     }
                 }
@@ -49,13 +49,12 @@
     }
     .feature-block{
         &__top{
-            width: 100%;
             h2{
-                @include font(28px, 700, #000000);
+                font-size: 28px;
                 margin: 0 0 25px 0;
             }
             p{
-                @include font(16px, 400, #000000);
+                font-size: 16px;
             }
         }
         &__bottom{
@@ -84,10 +83,10 @@
         }
         &__top{
             h2{
-                @include font(24px, 700, #000000);
+                font-size: 24px;
             }
             p{
-                @include font(12px, 400, #000000);
+                font-size: 12px;
             }
         }
     }

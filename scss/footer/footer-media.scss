@@ -35,7 +35,7 @@
     .footer{
         &__wrapper{
             p{
-                @include font(16px, 400, #b8b8b8);
+                font-size: 16px;
             }
             nav{
                 ul{
@@ -53,7 +53,7 @@
     .footer{
         &__wrapper{
             p{
-                @include font(12px, 400, #b8b8b8);
+                font-size: 12px;
             }
         }
     }

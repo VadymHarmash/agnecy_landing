@@ -9,7 +9,7 @@
                 padding: 0;
                 list-style: none;
                 display: flex;
-                justify-content: center;
+                @extend %center;
                 li{
                     padding: 45px 0 35px;
                     &:hover{

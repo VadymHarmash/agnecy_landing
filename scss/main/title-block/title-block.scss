@@ -9,8 +9,8 @@
     &__content{
         width: 50%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
         h1{
             @include font(60pt, 800, #000000);
             letter-spacing: 2.5px;
@@ -28,6 +28,8 @@
     }
     &__video{
         width: 40%;
+        display: flex;
+        @extend %center;
         iframe{
             box-shadow: 2px 1px 54px 0px rgba(117,117,117,1);
             width: 100%;

@@ -27,19 +27,13 @@
             form{
                 width: 100%;
                 input{
-                    width: 45%;
-                    height: 60px;
                     padding: 15px 0 15px 20px;
                 }
                 textarea{
-                    margin: 45px 0;
-                    width: 100%;
-                    height: 245px;
                     padding: 20px 0 0 20px;
                 }
                 a{
                     margin: 0 auto;
-                    padding: 15px 0;
                 }
             }
             div{
@@ -62,28 +56,27 @@
     .contact-block{
         &__wrapper{
             h2{
-                @include font(30px, 700, #333333);
+                font-size: 30px;
             }
             p{
-                @include font(16px, 400, #333333);
+                font-size: 16px;
             }
         }
         &__menu{
             form{
                 input{
-                    @include font(18px, 400, #333333);
+                    font-size: 18px;
                 }
                 textarea{
-                    @include font(16px, 400, #333333);
+                    font-size: 16px;
                 }
             }
             div{
                 h4{
-                    @include font(18px, 700, #d5d5d5);
+                    font-size: 18px;
                 }
                 p{
-                    @include font(16px, 400, #d5d5d5);
-                    &:nth-child(3){
+                    font-size: 16px;                    &:nth-child(3){
                         padding: 20px 0;
                     }
                 }
@@ -99,27 +92,27 @@
     .contact-block{
         &__wrapper{
             h2{
-                @include font(24px, 700, #333333);
+                font-size: 24px;
             }
             p{
-                @include font(12px, 400, #333333);
+                font-size: 12px;
             }
         }
         &__menu{
             form{
                 input{
-                    @include font(14px, 400, #333333);
+                    font-size: 14px;
                 }
                 textarea{
-                    @include font(12px, 400, #333333);
+                    font-size: 12px;
                 }
             }
             div{
                 h4{
-                    @include font(14px, 700, #d5d5d5);
+                    font-size: 14px;
                 }
                 p{
-                    @include font(12px, 400, #d5d5d5);
+                    font-size: 12px;
                 }
             }
         }
